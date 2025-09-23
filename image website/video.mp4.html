@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+          <style>
+            video{
+                width: 50%;
+                border: 4px solid green;
+                padding: 5px;
+            }
+          </style>
+        </head>
+        <body>
+        <video>
+        <source src="C:\Users\ECSLAB 5\myfirstrepo\image website\video.html" type="video/mp4">
+    </video>
+    <div>
+    <button onclick="playVideo()">play video</button>
+    <button onclick="pauseVideo()">Pause video</button>
+    <button onclik="stop()">stop video</button>
+    </div>
+    <script>
+        let vediotag = docent.querySelector("video");
+        function playvideo(){
+            videotag.play();
+        }
+        function pauseVideo(){
+           videotag.pause();
+        }
+        function stop(){
+            videotag.pause();
+            videotag.currentTime =0;
+        }
+    </script>
+        </body>
+    </html>
